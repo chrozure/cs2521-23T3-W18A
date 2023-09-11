@@ -1,1 +1,3 @@
-# cs2521-23T3-W18A
+# COMP2521 W16A Tutorial Code
+
+Code and notes written in tutorials. 
