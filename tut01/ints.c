@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 
 void stackInt(void);
 void heapInt(void);
@@ -9,6 +10,7 @@ int main(void) {
 
 void stackInt(void) {
 	int a = 5;
+	printf("%d", a);
 }
 
 // int main(void) {
