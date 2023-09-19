@@ -1,7 +1,7 @@
 CC = clang
 CFLAGS = -Wall -Werror -g
 
-all: swap ints array node
+all: swap ints array node listSum listDelete
 
 swap: swap.c
 	$(CC) $(CFLAGS) -o swap swap.c
@@ -20,3 +20,8 @@ listSum: listSum.c
 
 listDelete: listDelete.c
 	$(CC) $(CFLAGS) -o listDelete listDelete.c
+
+##############################################################################
+
+clean:
+	rm -f swap ints array node listSum listDelete
