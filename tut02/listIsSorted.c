@@ -12,10 +12,10 @@ bool listIsSorted(struct node *l);
 
 int main(void) {
 
-    struct node *n1 = newNode(3);
-    struct node *n2 = newNode(1);
+    struct node *n1 = newNode(1);
+    struct node *n2 = newNode(3);
     struct node *n3 = newNode(4);
-    struct node *n4 = newNode(1);
+    struct node *n4 = newNode(5);
 
     n1->next = n2;
     n2->next = n3;
@@ -48,5 +48,27 @@ struct node *newNode(int val) {
 
 bool listIsSorted(struct node *l) {
 
-    return true;
+    // Base case 1 - list is empty
+    if (l == NULL) {
+        return true;
+    }
+
+    // Base case 2 - only one node in list
+    if (l->next == NULL) {
+        return true;
+    }
+
+    // Base case 3 - if the next node has a smaller value
+    if (l->next->value < l->value) {
+        return false;
+    }
+
+    // Recursive case
+    else {
+        return listIsSorted(l->next);
+    }
+
 }
+
+
+

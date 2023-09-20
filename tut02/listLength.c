@@ -44,5 +44,45 @@ struct node *newNode(int val) {
 
 int listLength(struct node *l) {
 
-    return 0;
+    // Base case: - empty list
+    if (l == NULL) {
+        return 0;
+    }
+
+    // Recursive case - a node, and the rest of the list
+    else {
+        return 1 + listLength(l->next);
+    }
+
 }
+
+
+
+/*
+A factorial is the number that you get by multiplying
+a number with all the natural numbers less than it
+
+3! = 3 * 2 * 1
+
+Iteratively: you need a variable to store the product
+A condition, and a counter
+
+Recursively: you call the same function repeatedly
+with an argument that gets smaller, and stop at tthe base case
+
+3! = 3 * 2!
+3! = 3 * (2 * 1!)
+3! = 3 * (2 * 1 * 0!)
+
+BASE CASE:
+0! = 1
+
+
+
+
+LINKED LIST RECUSIVE DEFINITION:
+
+A linked list is either:
+    - an empty list (NULL)
+    - some node, and the rest of the list
+*/

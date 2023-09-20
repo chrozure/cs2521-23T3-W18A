@@ -44,5 +44,20 @@ struct node *newNode(int val) {
 
 int listCountOdds(struct node *l) {
 
-    return 0;
+    // Base case - end of the list
+    if (l == NULL) {
+        return 0;
+    }
+
+    // Recursive case - node + rest of list
+    else {
+        if (l->value % 2 == 0) {
+            return listCountOdds(l->next);
+        } else {
+            return 1 + listCountOdds(l->next);
+        }
+
+        // return (l->value % 2) + listCountOdds(l->next);
+    }
+
 }
