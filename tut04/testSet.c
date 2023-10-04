@@ -19,7 +19,29 @@ int main(void) {
 
 int numOddOccurrences(int arr[], int size) {
 
-    return 0;
+    // Create an empty set
+    // which stores the numbers that appear an odd number of times
+    Set oddOccurrences = SetNew();
+
+    // Loop through the given array
+    for (int i = 0; i < size; i++) {
+
+        // If the current number is not in the set,
+        //      add it to the set
+        if (!SetContains(oddOccurrences, arr[i])) {
+            SetInsert(oddOccurrences, arr[i]);
+        }
+        // Otherwise, remove it from the set
+        else {
+            SetDelete(oddOccurrences, arr[i]);
+        }
+
+    }
+
+    int num = SetSize(oddOccurrences);
+    SetFree(oddOccurrences);
+    // Return the size of the set at the end
+    return num;
 }
 
 int numSingleOccurrences(int arr[], int size) {
