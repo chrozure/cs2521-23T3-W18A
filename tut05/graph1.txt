@@ -1,0 +1,24 @@
+a.
+Edges are the "lines" that connect vertices
+11 edges
+
+b.
+A cycle is a "closed" subgraph
+6 cycles
+
+c.
+A clique is a complete subgraph with 3 or more vertices
+2 cliques
+
+d.
+The degree of a vertex is how many edges
+are going outside of it.
+Degree of:
+- 3 is 3
+- 0 is 2
+- 7 is 5
+- 1 is 3
+- 5 is 1
+
+e.
+7 edges

@@ -1,0 +1,4 @@
+The adjacency matrix for the undirected graph is symmetric,
+since all the edges are "two-way". That is, if there is an edge
+between vertices u and v, then you can go from u to v,
+and also from v to u.
