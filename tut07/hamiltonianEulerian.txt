@@ -1,0 +1,13 @@
+A Hamiltonian path is:
+    - A path where you visit every vertex once
+
+A Hamiltonian circuit is:
+    - A Hamiltonian circuit is a path
+    where you visit every vertex once
+    and end where you started
+
+An Euler path is:
+    - A path where you visit every edge once
+
+An Euler circuit is:
+    - A cycle where you visit every edge once

@@ -1,0 +1,10 @@
+A connected graph is:
+
+
+A complete graph is:
+
+
+
+
+connected => complete?
+complete => connected?
