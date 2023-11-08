@@ -1,0 +1,19 @@
+Feedback from Nick based off of assignment 1 style marking:
+
+    - You should have a comment before your functions and
+        helper functions briefly explaining what they do
+
+// This function computes f(x)
+int f(int x) {
+
+}
+
+    - Do NOT mix up snake_case and camelCase. It doesn't
+        matter which one you choose, as long as you
+        stick to one and follow the style guide.
+
+        e.g. I saw a variable name that was the_tempTree.
+        It should instead be:
+            the_temp_tree
+            theTempTree
+

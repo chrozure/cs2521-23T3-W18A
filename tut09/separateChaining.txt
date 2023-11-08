@@ -1,0 +1,19 @@
+We have a hash table of size N which uses separate chaining for collision resolution.
+
+When we insert k = 2N elements:
+    - the worst case is when every key gets hashed into the same
+    index. An example of this is when h(x) = 0 for all x. So,
+    we would have to compare each element to every other element
+    when inserting, which gives 0 + 1 + 2 + ... + (k-1) comparisons,
+    which is O(k^2) time.
+
+    - The best case is when the hash function distributes the
+    elements evenly across the table. In this case, we end
+    up with a chain of ceil(k/N) length, and the number of
+    comparisons is k/2.
+
+The average search cost is:
+    - k/2 in the worst case, as we have to go through the
+    chain to find the key
+
+    - 1.5 in the best case.
