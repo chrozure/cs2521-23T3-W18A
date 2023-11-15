@@ -1,0 +1,7 @@
+Do your myExperience surveys!!!
+
+At 50% response rate, and every 4% after:
+    We will reveal the topic and mark value of a randomly chosen exam question
+    Topic/mark value of one questions revealed at 50%, 54%, 58%, 62%, ...
+
+Also good luck with the rest of assignment 2 and the exam :)
